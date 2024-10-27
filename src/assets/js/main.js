@@ -4,7 +4,7 @@
 // 	const tl = gsap.timeline({
 // 		scrollTrigger: {
 // 			trigger: '.why-us',
-// 			start: 'center 40%',
+// 			start: 'center 60%',
 // 			end: '+=800px',
 
 // 			pin: true,
