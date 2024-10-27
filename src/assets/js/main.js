@@ -20,7 +20,6 @@ const forDesktop = () => {
 			pin: true,
 			pinSpacing: true,
 			scrub: true,
-			markers: true,
 		},
 	});
 
@@ -62,7 +61,6 @@ const forMobile = () => {
 			pin: true,
 			pinSpacing: true,
 			scrub: true,
-			markers: true,
 		},
 	});
 
