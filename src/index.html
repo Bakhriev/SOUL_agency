@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+	@include('./template/_head.html')
+	<body>
+		<div class="app">
+			<div class="overlay"></div>
+			@include('./assets/components/header.html')
+			<!--  -->
+			<main class="main">
+				<!--  -->
+				@include('./assets/components/hero.html')
+				<div class="why-us">
+					<h1 class="why-us__title">Почему выбирают нас</h1>
+
+					<div class="why-us__cards section">
+						<div class="text-block">
+							<img
+								src="./assets/img/svg/circle.svg"
+								alt="circle"
+								class="text-block__img" />
+							<div class="text-block__body">
+								<h2 class="text-block__title">Доступная стоимость</h2>
+								<p class="text-block__text">
+									Оптимизируем расходы благодаря модульному подходу и повторному
+									использованию проверенных компонентов
+								</p>
+							</div>
+						</div>
+
+						<div class="text-block">
+							<img
+								src="./assets/img/svg/circle.svg"
+								alt="circle"
+								class="text-block__img" />
+							<div class="text-block__body">
+								<h2 class="text-block__title">Гарантированные сроки</h2>
+								<p class="text-block__text">
+									Четкое планирование и контроль на каждом этапе обеспечивают
+									своевременную сдачу проектов
+								</p>
+							</div>
+						</div>
+
+						<div class="text-block">
+							<img
+								src="./assets/img/svg/circle.svg"
+								alt="circle"
+								class="text-block__img" />
+							<div class="text-block__body">
+								<h2 class="text-block__title">Минимальные риски</h2>
+								<p class="text-block__text">
+									Богатый опыт и отлаженные процессы разработки снижают
+									вероятность неудач
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--  -->
+			</main>
+			<!--  -->
+			@include('./assets/components/footer.html')
+		</div>
+		@include('./template/_scripts.html')
+	</body>
+</html>
