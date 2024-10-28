@@ -23,7 +23,6 @@ document.addEventListener('DOMContentLoaded', () => {
 		forDesktop();
 	} else {
 		console.log('mobile');
-
 		forMobile();
 	}
 });
@@ -35,10 +34,9 @@ const forDesktop = () => {
 	const tl = gsap.timeline({
 		scrollTrigger: {
 			trigger: '.why-us',
-			start: 'top top',
-			end: 'bottom+=800px',
+			start: 'top 20%',
+			end: '+=1000',
 			pin: true,
-			pinSpacing: true,
 			scrub: true,
 		},
 	});
@@ -55,18 +53,6 @@ const forDesktop = () => {
 	tl.to('.text-block:nth-child(2) .text-block__body', { x: -1348, opacity: 0 });
 	tl.to('.text-block:nth-child(3) .text-block__body', { x: -1348 }, 0.5);
 	tl.to('.text-block:nth-child(3) .text-block__img', { x: -1260 }, 0.5);
-
-	// Привязка .gradient к секции
-	gsap.to('.gradient', {
-		yPercent: 100, // процентное значение, чтобы градиент двигался вместе с секцией
-		ease: 'none',
-		scrollTrigger: {
-			trigger: '.why-us',
-			start: 'top top',
-			end: 'bottom+=800px',
-			scrub: true,
-		},
-	});
 };
 
 const forMobile = () => {
@@ -76,10 +62,9 @@ const forMobile = () => {
 	const tl = gsap.timeline({
 		scrollTrigger: {
 			trigger: '.why-us',
-			start: 'top top',
-			end: 'bottom+=400px',
+			start: 'top 10%',
+			end: 'bottom+=1000px',
 			pin: true,
-			pinSpacing: true,
 			scrub: true,
 		},
 	});

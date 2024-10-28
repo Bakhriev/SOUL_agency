@@ -23,9 +23,35 @@
 	z-index: 3;
 	padding-top: 76px;
 	padding-left: 300px;
-	height: 100vh;
+
+	&::before {
+		content: '';
+		position: absolute;
+		z-index: 1;
+		top: -850px;
+		left: 50%;
+		transform: translateX(-50%);
+		width: 3450px;
+		height: 1657px;
+		background-image: url('../img/svg/gradient.svg');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+
+		@media screen and (max-width: 992px) {
+			width: 2097px;
+		}
+
+		@media screen and (max-width: 480px) {
+			top: -450px;
+			width: 1097px;
+			height: 952px;
+		}
+	}
 
 	&__inner {
+		position: relative;
+		z-index: 3;
 	}
 
 	@media screen and (max-width: 1200px) {
